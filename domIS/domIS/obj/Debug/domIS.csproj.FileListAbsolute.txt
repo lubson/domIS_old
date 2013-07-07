@@ -1,1 +1,20 @@
 c:\users\lubson\documents\visual studio 2012\Projects\domIS\domIS\bin\Debug\domIS.exe.config
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\bin\Debug\domIS.exe.config
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\bin\Debug\domIS.exe
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\bin\Debug\domIS.pdb
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\bin\Debug\Data.dll
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\bin\Debug\EntityFramework.dll
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\bin\Debug\Model.dll
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\bin\Debug\Data.pdb
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\bin\Debug\Model.pdb
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\bin\Debug\EntityFramework.xml
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\obj\Debug\domIS.csprojResolveAssemblyReference.cache
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\obj\Debug\MainWindow.baml
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\obj\Debug\MainWindow.g.cs
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\obj\Debug\App.g.cs
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\obj\Debug\domIS_MarkupCompile.cache
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\obj\Debug\domIS.g.resources
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\obj\Debug\domIS.Properties.Resources.resources
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\obj\Debug\domIS.csproj.GenerateResource.Cache
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\obj\Debug\domIS.exe
+C:\Users\lubson\Documents\GitHub\domIS\domIS\domIS\obj\Debug\domIS.pdb

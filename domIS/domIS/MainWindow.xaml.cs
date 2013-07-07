@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Data;
+using Model;
 
 namespace domIS
 {
@@ -23,6 +25,17 @@ namespace domIS
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            using (var db = new UcastniciContext())
+            {
+                var ucastniciRepository = new UcastnikRepository(db);
+                
+                Ucastnik ucastnik = new Ucastnik { Jmeno = "Lubomir", Prijmeni = "Hruban"};
+                ucastniciRepository.Add(ucastnik);
+            }
         }
     }
 }

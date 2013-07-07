@@ -1,0 +1,10 @@
+C:\Users\lubson\Documents\GitHub\domIS\domIS\Data\bin\Debug\Data.dll.config
+C:\Users\lubson\Documents\GitHub\domIS\domIS\Data\bin\Debug\Data.dll
+C:\Users\lubson\Documents\GitHub\domIS\domIS\Data\bin\Debug\Data.pdb
+C:\Users\lubson\Documents\GitHub\domIS\domIS\Data\bin\Debug\EntityFramework.dll
+C:\Users\lubson\Documents\GitHub\domIS\domIS\Data\bin\Debug\Model.dll
+C:\Users\lubson\Documents\GitHub\domIS\domIS\Data\bin\Debug\Model.pdb
+C:\Users\lubson\Documents\GitHub\domIS\domIS\Data\bin\Debug\EntityFramework.xml
+C:\Users\lubson\Documents\GitHub\domIS\domIS\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+C:\Users\lubson\Documents\GitHub\domIS\domIS\Data\obj\Debug\Data.dll
+C:\Users\lubson\Documents\GitHub\domIS\domIS\Data\obj\Debug\Data.pdb
