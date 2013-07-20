@@ -7,20 +7,15 @@ using Model;
 
 namespace Data
 {
-    
-    public class UcastnikRepository
+
+    public class UcastnikRepository : Repository<Ucastnik>
     {
-        UcastniciContext _context;
 
-        public UcastnikRepository(UcastniciContext context)
-        {
-            _context = context;
-        }
 
-        public void Add(Ucastnik ucastnik)
-        {
-            _context.Ucastnici.Add(ucastnik);
-            _context.SaveChanges();
-        }
+        public UcastnikRepository() : base()
+        { }
+
+        public UcastnikRepository(UcastniciUnitOfWork uow) : base(uow)
+        { }
     }
 }

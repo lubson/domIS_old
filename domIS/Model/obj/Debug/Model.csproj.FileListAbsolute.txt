@@ -3,3 +3,13 @@ C:\Users\lubson\Documents\GitHub\domIS\domIS\Model\bin\Debug\Model.pdb
 C:\Users\lubson\Documents\GitHub\domIS\domIS\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\lubson\Documents\GitHub\domIS\domIS\Model\obj\Debug\Model.dll
 C:\Users\lubson\Documents\GitHub\domIS\domIS\Model\obj\Debug\Model.pdb
+\\afrodita\home\xhruban1\_profile\Desktop\domIS\domIS\Model\bin\Debug\Model.dll
+\\afrodita\home\xhruban1\_profile\Desktop\domIS\domIS\Model\bin\Debug\Model.pdb
+\\afrodita\home\xhruban1\_profile\Desktop\domIS\domIS\Model\obj\Debug\ResolveAssemblyReference.cache
+\\afrodita\home\xhruban1\_profile\Desktop\domIS\domIS\Model\obj\Debug\Model.dll
+\\afrodita\home\xhruban1\_profile\Desktop\domIS\domIS\Model\obj\Debug\Model.pdb
+C:\temp\domIS\domIS\Model\bin\Debug\Model.dll
+C:\temp\domIS\domIS\Model\bin\Debug\Model.pdb
+C:\temp\domIS\domIS\Model\obj\Debug\ResolveAssemblyReference.cache
+C:\temp\domIS\domIS\Model\obj\Debug\Model.dll
+C:\temp\domIS\domIS\Model\obj\Debug\Model.pdb

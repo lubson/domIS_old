@@ -29,13 +29,16 @@ namespace domIS
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            using (var db = new UcastniciContext())
-            {
-                var ucastniciRepository = new UcastnikRepository(db);
-                
-                Ucastnik ucastnik = new Ucastnik { Jmeno = "Lubomir", Prijmeni = "Hruban"};
-                ucastniciRepository.Add(ucastnik);
-            }
+            var ucastnikWindow = new UcastnikWindow();
+            ucastnikWindow.Show();
+        }
+
+        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        {
+
+            System.Windows.Data.CollectionViewSource ucastnikViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("ucastnikViewSource")));
+            // Load data by setting the CollectionViewSource.Source property:
+            // ucastnikViewSource.Source = [generic data source]
         }
     }
 }
