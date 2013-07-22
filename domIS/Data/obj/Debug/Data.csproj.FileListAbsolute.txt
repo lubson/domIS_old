@@ -31,7 +31,6 @@ C:\temp\domIS\domIS\Data\obj\Debug\Data.dll
 C:\temp\domIS\domIS\Data\obj\Debug\Data.pdb
 C:\temp\domIS\domIS\Data\bin\Debug\System.Data.SqlServerCe.dll
 C:\temp\domIS\domIS\Data\bin\Debug\System.Data.SqlServerCe.Entity.dll
-C:\Users\lubson\Desktop\domIS\domIS\Data\bin\Debug\db.sdf
 C:\Users\lubson\Desktop\domIS\domIS\Data\bin\Debug\Data.dll.config
 C:\Users\lubson\Desktop\domIS\domIS\Data\bin\Debug\Data.dll
 C:\Users\lubson\Desktop\domIS\domIS\Data\bin\Debug\Data.pdb
@@ -44,3 +43,7 @@ C:\Users\lubson\Desktop\domIS\domIS\Data\bin\Debug\EntityFramework.xml
 C:\Users\lubson\Desktop\domIS\domIS\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 C:\Users\lubson\Desktop\domIS\domIS\Data\obj\Debug\Data.dll
 C:\Users\lubson\Desktop\domIS\domIS\Data\obj\Debug\Data.pdb
+C:\Users\lubson\Desktop\domIS\domIS\Data\obj\Debug\Data.Migrations.InitialCreate.resources
+C:\Users\lubson\Desktop\domIS\domIS\Data\obj\Debug\Data.csproj.GenerateResource.Cache
+C:\Users\lubson\Desktop\domIS\domIS\Data\bin\Debug\developDB.sdf
+C:\Users\lubson\Desktop\domIS\domIS\Data\obj\Debug\Data.Migrations.AddUcastnikNarozen.resources

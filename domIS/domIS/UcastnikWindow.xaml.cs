@@ -39,6 +39,8 @@ namespace domIS
                 Ucastnik ucastnik = new Ucastnik();
                 ucastnik.Jmeno = jmenoTextBox.Text;
                 ucastnik.Prijmeni = prijmeniTextBox.Text;
+                pohlaviComboBox.ItemsSource = Enum.GetValues(typeof(Pohlavi)).Cast<Pohlavi>();
+                ucastnik.Narozen = (DateTime)narozenDatePicker.SelectedDate;
                 ucastniciRepository.Add(ucastnik);
 
                 uow.Save();

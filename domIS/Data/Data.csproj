@@ -11,6 +11,7 @@
     <AssemblyName>Data</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,7 +24,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -50,6 +50,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -67,11 +68,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dbDataSet.Designer.cs">
+    <Compile Include="developDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>dbDataSet.xsd</DependentUpon>
+      <DependentUpon>developDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="Migrations\201307152056489_InitialCreate.cs" />
+    <Compile Include="Migrations\201307152056489_InitialCreate.Designer.cs">
+      <DependentUpon>201307152056489_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201307222203368_AddUcastnikNarozen.cs" />
+    <Compile Include="Migrations\201307222203368_AddUcastnikNarozen.Designer.cs">
+      <DependentUpon>201307222203368_AddUcastnikNarozen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -87,16 +98,16 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
-    <None Include="dbDataSet.xsc">
-      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    <None Include="developDBDataSet.xsc">
+      <DependentUpon>developDBDataSet.xsd</DependentUpon>
     </None>
-    <None Include="dbDataSet.xsd">
+    <None Include="developDBDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dbDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>developDBDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="dbDataSet.xss">
-      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    <None Include="developDBDataSet.xss">
+      <DependentUpon>developDBDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -109,11 +120,6 @@
       <Project>{09a18300-b746-4eb9-8c0c-6adffae6536b}</Project>
       <Name>Model</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="db.sdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -136,6 +142,19 @@
       <ProductName>SQL Server Compact 4.0 SP1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201307152056489_InitialCreate.resx">
+      <DependentUpon>201307152056489_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201307222203368_AddUcastnikNarozen.resx">
+      <DependentUpon>201307222203368_AddUcastnikNarozen.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="developDB.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

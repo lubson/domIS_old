@@ -72,7 +72,6 @@ C:\Users\lubson\Desktop\domIS\domIS\domIS\obj\Debug\domIS_MarkupCompile.cache
 C:\Users\lubson\Desktop\domIS\domIS\domIS\obj\Debug\domIS.g.resources
 C:\Users\lubson\Desktop\domIS\domIS\domIS\obj\Debug\domIS.Properties.Resources.resources
 C:\Users\lubson\Desktop\domIS\domIS\domIS\obj\Debug\domIS.csproj.GenerateResource.Cache
-C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\db.sdf
 C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\domIS.exe
 C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\domIS.pdb
 C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\Data.dll
@@ -83,3 +82,4 @@ C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\System.Data.SqlServerCe.Enti
 C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\Data.pdb
 C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\Model.pdb
 C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\EntityFramework.xml
+C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\developDB.sdf

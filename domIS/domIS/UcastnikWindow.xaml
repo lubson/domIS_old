@@ -5,6 +5,7 @@
         Title="UcastnikWindow" Height="300" Width="300" Loaded="Window_Loaded_1">
     <Window.Resources>
         <CollectionViewSource x:Key="ucastnikViewSource" d:DesignSource="{d:DesignInstance {x:Type Model:Ucastnik}, CreateList=True}"/>
+        
     </Window.Resources>
     <Grid>
         <Button Content="Button" HorizontalAlignment="Left" Margin="163,237,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
@@ -30,6 +31,34 @@
             </Grid.RowDefinitions>
             <Label Content="Prijmeni:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
             <TextBox x:Name="prijmeniTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="3" Grid.Row="0" Text="{Binding Prijmeni, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center" Width="120"/>
+        </Grid>
+        <Grid x:Name="grid4" DataContext="{StaticResource ucastnikViewSource}" HorizontalAlignment="Left" Margin="14,134,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Narozen:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <DatePicker x:Name="narozenDatePicker" Grid.Column="1" HorizontalAlignment="Left" Margin="3" Grid.Row="0" SelectedDate="{Binding Narozen, Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid x:Name="grid3" DataContext="{StaticResource ucastnikViewSource}" HorizontalAlignment="Left" Margin="12,180,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Content="Pohlavi:" Grid.Column="0" HorizontalAlignment="Left" Margin="3" Grid.Row="0" VerticalAlignment="Center"/>
+            <ComboBox x:Name="pohlaviComboBox" Grid.Column="1" DisplayMemberPath="Pohlavi" HorizontalAlignment="Left" Height="Auto" ItemsSource="{Binding}" Margin="3" Grid.Row="0" VerticalAlignment="Center" Width="120">
+                <ComboBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel/>
+                    </ItemsPanelTemplate>
+                </ComboBox.ItemsPanel>
+            </ComboBox>
         </Grid>
 
     </Grid>

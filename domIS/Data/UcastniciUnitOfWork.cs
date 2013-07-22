@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace Data
 {
-    public class UcastniciUnitOfWork
+    public class UcastniciUnitOfWork : IUnitOfWork
     {
         private readonly UcastniciContext _context;
-
-
+        
         public UcastniciUnitOfWork()
         {
             _context = new UcastniciContext();
         }
-
+        
+        public UcastniciContext Context
+        {
+            get { return _context; }
+        }
+        
         public UcastniciUnitOfWork(UcastniciContext context)
         {
             _context = context;
@@ -24,11 +28,6 @@ namespace Data
         public int Save()
         {
             return _context.SaveChanges();
-        }
-
-        public UcastniciContext Context
-        {
-            get { return _context; }
         }
 
         public void Dispose()

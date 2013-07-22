@@ -9,17 +9,13 @@ namespace Data
     public abstract class Repository<T> : IRepository<T>
         where T : class
     {
-        private readonly UcastniciContext _context;
+        public IUnitOfWork UnitOfWork { get; set; }
 
-
-        public Repository() 
-        { 
-            _context = new UcastniciContext();
-        }
+        public Repository() { }
         
         public Repository(UcastniciUnitOfWork uow)
         {
-            _context = uow.Context;
+            UnitOfWork = uow;
         }
 
         public IQueryable<T> GetAll()
@@ -34,7 +30,7 @@ namespace Data
 
         public virtual void Add(T entity)
         {
-               _context.Set<T>().Add(entity);
+            UnitOfWork.Context.Set<T>().Add(entity);
         }
 
         public void Delete(T entity)

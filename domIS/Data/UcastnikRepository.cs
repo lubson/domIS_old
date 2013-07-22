@@ -12,10 +12,14 @@ namespace Data
     {
 
 
-        public UcastnikRepository() : base()
-        { }
+        public UcastnikRepository()
+        {
+            UnitOfWork = new UcastniciUnitOfWork();
+        }
 
         public UcastnikRepository(UcastniciUnitOfWork uow) : base(uow)
-        { }
+        {
+            UnitOfWork = uow;
+        }
     }
 }
