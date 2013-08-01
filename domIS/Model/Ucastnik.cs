@@ -13,5 +13,10 @@ namespace Model
         public string Prijmeni { get; set; }
         public Pohlavi Pohlavi { get; set; }
         public DateTime Narozen { get; set; }
+
+        public Ucastnik()
+        {
+            UcastnikId = -1;
+        }
     }
 }

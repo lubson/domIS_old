@@ -83,3 +83,5 @@ C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\Data.pdb
 C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\Model.pdb
 C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\EntityFramework.xml
 C:\Users\lubson\Desktop\domIS\domIS\domIS\bin\Debug\developDB.sdf
+C:\Users\lubson\Desktop\domIS\domIS\domIS\obj\Debug\App.baml
+C:\Users\lubson\Desktop\domIS\domIS\domIS\obj\Debug\Resource.baml

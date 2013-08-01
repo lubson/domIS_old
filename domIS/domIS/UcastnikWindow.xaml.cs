@@ -22,40 +22,48 @@ namespace domIS
     public partial class UcastnikWindow : Window
     {
 
-        private UcastniciUnitOfWork uow;
-        private UcastnikRepository ucastniciRepository;
+        public Ucastnik Ucastnik;
+        private UnitOfWork uow;
+        private UcastniciRepository ucastniciRepository;
 
-        public UcastnikWindow()
+        public UcastnikWindow(Ucastnik ucastnik)
         {
             InitializeComponent();
-            uow = new UcastniciUnitOfWork();
-            ucastniciRepository = new UcastnikRepository(uow);
+            Ucastnik = ucastnik;
+            uow = new UnitOfWork();
+            ucastniciRepository = new UcastniciRepository();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void SaveUcastnik(object sender, RoutedEventArgs e)
         {
-
-
-                Ucastnik ucastnik = new Ucastnik();
-                ucastnik.Jmeno = jmenoTextBox.Text;
-                ucastnik.Prijmeni = prijmeniTextBox.Text;
-                pohlaviComboBox.ItemsSource = Enum.GetValues(typeof(Pohlavi)).Cast<Pohlavi>();
-                ucastnik.Narozen = (DateTime)narozenDatePicker.SelectedDate;
-                ucastniciRepository.Add(ucastnik);
+                Ucastnik.Jmeno = jmenoTextBox.Text;
+                Ucastnik.Prijmeni = prijmeniTextBox.Text;
+                Ucastnik.Narozen = (DateTime)narozenDatePicker.SelectedDate;
+                if ((bool)pohlaviRadioButton.IsChecked)
+                    Ucastnik.Pohlavi = Pohlavi.muzske;
+                else
+                    Ucastnik.Pohlavi = Pohlavi.zenske;
+                            
+                ucastniciRepository.InsertOrUpdate(Ucastnik);
 
                 uow.Save();
                 uow.Dispose();
+                Close();
             }
    
 
-        //mozna zbytecne objevilo se tady, kdyz jsem pridal source pro ucastnika
-        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        private void OnLoad(object sender, RoutedEventArgs e)
         {
-
-            System.Windows.Data.CollectionViewSource ucastnikViewSource = ((System.Windows.Data.CollectionViewSource)(this.FindResource("ucastnikViewSource")));
+            //mozna zbytecne objevilo se tady, kdyz jsem pridal source pro ucastnika
+            System.Windows.Data.CollectionViewSource ucastnikViewSource = 
+                ((System.Windows.Data.CollectionViewSource)(this.FindResource("ucastnikViewSource")));
             // Load data by setting the CollectionViewSource.Source property:
             // ucastnikViewSource.Source = [generic data source]
+          
+            
+            
         }
+
         
     }
 }

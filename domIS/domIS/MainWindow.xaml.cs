@@ -29,7 +29,7 @@ namespace domIS
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var ucastnikWindow = new UcastnikWindow();
+            var ucastnikWindow = new UcastnikWindow(new Ucastnik());
             ucastnikWindow.Show();
         }
 

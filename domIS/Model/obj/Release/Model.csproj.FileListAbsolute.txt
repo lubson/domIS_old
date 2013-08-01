@@ -1,0 +1,8 @@
+C:\Users\lubson\Desktop\domIS\domIS\Model\bin\Release\Model.dll.config
+C:\Users\lubson\Desktop\domIS\domIS\Model\bin\Release\Model.dll
+C:\Users\lubson\Desktop\domIS\domIS\Model\bin\Release\Model.pdb
+C:\Users\lubson\Desktop\domIS\domIS\Model\bin\Release\EntityFramework.dll
+C:\Users\lubson\Desktop\domIS\domIS\Model\bin\Release\EntityFramework.xml
+C:\Users\lubson\Desktop\domIS\domIS\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+C:\Users\lubson\Desktop\domIS\domIS\Model\obj\Release\Model.dll
+C:\Users\lubson\Desktop\domIS\domIS\Model\obj\Release\Model.pdb

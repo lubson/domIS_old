@@ -73,7 +73,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>developDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="IUnitOfWork.cs" />
     <Compile Include="Migrations\201307152056489_InitialCreate.cs" />
     <Compile Include="Migrations\201307152056489_InitialCreate.Designer.cs">
       <DependentUpon>201307152056489_InitialCreate.cs</DependentUpon>
@@ -83,8 +82,8 @@
       <DependentUpon>201307222203368_AddUcastnikNarozen.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Repository.cs" />
-    <Compile Include="IRepository.cs" />
+    <Compile Include="UcastniciRepository.cs" />
+    <Compile Include="IUcastniciRepository.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -92,8 +91,7 @@
     </Compile>
     <Compile Include="UcastniciContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UcastniciUnitOfWork.cs" />
-    <Compile Include="UcastnikRepository.cs" />
+    <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
